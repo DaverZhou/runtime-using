@@ -2,7 +2,7 @@
 
 随着iOS系统版本的更新，部分性能更优异或者可读性更高的API将有可能对原有API进行废弃与更替。因此在开发中经常需要考虑、判断版本，那是不是可以考虑用runtime来进行动态处理？
 下面主要是针对适配iOS 11 *contentInsetAdjustmentBehavior*与*automaticallyAdjustsScrollViewInsets*做栗子
-#####1、新建一个Category（RTForwarding）
+##### 1、新建一个Category（RTForwarding）
 用于调用到iOS 11属性contentInsetAdjustmentBehavior的封装处理
 代码如下：
 ```
@@ -56,7 +56,7 @@
     }
 }
 ```
-#####2、调用Category（RTForwarding）
+##### 2、调用Category（RTForwarding）
 在需要使用的地方导入头文件
 ```
 #import "UIScrollView+RTForwarding.h"
